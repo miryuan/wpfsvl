@@ -28,11 +28,10 @@ using System.Windows.Shapes;
 namespace WPFSoundVisualizationLib
 {
     /// <summary>
-    /// A digital LED clock display control with 
-    /// hours, minutes, seconds, and hundredths of a second.
+    /// 一种数字LED时钟显示控件，具有小时、分钟、秒和百分之一秒。
     /// </summary>
     [DisplayName("Digital Clock")]
-    [Description("Displays timespans as a digital LED clock.")]
+    [Description("将时间跨度显示为数字LED时钟.")]
     [ToolboxItem(true)]   
     [TemplatePart(Name = "PART_ClockGrid", Type = typeof(Grid))]    
     public class DigitalClock : Control
@@ -69,7 +68,7 @@ namespace WPFSoundVisualizationLib
         #region Dependency Properties
         #region Time
         /// <summary>
-        /// Identifies the <see cref="Time" /> dependency property. 
+        /// 识别 <see cref="Time" /> 的依赖关系
         /// </summary>
         public static readonly DependencyProperty TimeProperty = DependencyProperty.Register("Time", typeof(TimeSpan), typeof(DigitalClock), new UIPropertyMetadata(TimeSpan.Zero, OnTimeChanged, OnCoerceTime));
 
@@ -90,10 +89,10 @@ namespace WPFSoundVisualizationLib
         }
 
         /// <summary>
-        /// Coerces the value of <see cref="Time"/> when a new value is applied.
+        /// 在应用新值时强制 <see cref="Time"/> 的值。
         /// </summary>
-        /// <param name="value">The value that was set on <see cref="Time"/></param>
-        /// <returns>The adjusted value of <see cref="Time"/></returns>
+        /// <param name="value">设置 <see cref="Time"/> 的值 </param>
+        /// <returns>调整后 <see cref="Time"/> 的值</returns>
         protected virtual TimeSpan OnCoerceTime(TimeSpan value)
         {
             return value;
@@ -110,7 +109,7 @@ namespace WPFSoundVisualizationLib
         }
 
         /// <summary>
-        /// Gets or sets the time to be displayed in the Digital Clock.
+        /// 获取或设置要在数字时钟中显示的时间.
         /// </summary>
         public TimeSpan Time
         {
@@ -126,7 +125,7 @@ namespace WPFSoundVisualizationLib
         }
         #endregion
 
-        #region ShowHours
+        #region 显示小时
         /// <summary>
         /// Identifies the <see cref="ShowHours" /> dependency property. 
         /// </summary>
@@ -170,9 +169,8 @@ namespace WPFSoundVisualizationLib
         }
 
         /// <summary>
-        /// Gets or sets whether the digital clock will show the hours portion
-        /// in the digital clock display. This is useful if the times displayed
-        /// are always less than an hour.
+        ///获取或设置数字时钟是否在数字时钟显示中显示小时部分
+        ///如果显示的时间始终小于一小时,则此选项非常有用
         /// </summary>
         public bool ShowHours
         {
@@ -188,7 +186,7 @@ namespace WPFSoundVisualizationLib
         }
         #endregion
 
-        #region ShowSubSeconds
+        #region 显示子秒
         /// <summary>
         /// Identifies the <see cref="ShowSubSeconds" /> dependency property. 
         /// </summary>
@@ -232,8 +230,7 @@ namespace WPFSoundVisualizationLib
         }
 
         /// <summary>
-        /// Gets or sets whether fractions of a second are displayed in the digital
-        /// clock display.
+        ///获取或设置是否在数字时钟显示中显示秒的小数部分
         /// </summary>
         public bool ShowSubSeconds
         {
@@ -260,8 +257,7 @@ namespace WPFSoundVisualizationLib
 
         #region Template Overrides
         /// <summary>
-        /// When overridden in a derived class, is invoked whenever application code
-        /// or internal processes call System.Windows.FrameworkElement.ApplyTemplate().
+        /// 在派生类中重写时，每当应用程序代码或内部进程调用 System.Windows.FrameworkElement.ApplyTemplate().
         /// </summary>
         public override void OnApplyTemplate()
         {
@@ -330,7 +326,7 @@ namespace WPFSoundVisualizationLib
         }
 
         /// <summary>
-        /// Called whenever the control's template changes. 
+        /// 每当控件的模板更改时调用
         /// </summary>
         /// <param name="oldTemplate">The old template</param>
         /// <param name="newTemplate">The new template</param>

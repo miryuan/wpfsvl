@@ -5,9 +5,9 @@ using System.Windows;
 using System.Windows.Controls;
 
 namespace WPFSoundVisualizationLib
-{    
+{
     /// <summary>
-    /// A control that displays and edits banded frequency amplification.
+    /// 显示和编辑带状频率放大的控件.
     /// </summary>
     [DisplayName("Equalizer")]
     [Description("Displays and edits banded frequency amplification.")]
@@ -69,9 +69,9 @@ namespace WPFSoundVisualizationLib
         }
 
         /// <summary>
-        /// Gets or sets the values of each equalizer band.
+        /// 获取或设置每个均衡器带区的值.
         /// </summary>
-        /// <remarks>The number of elements in the EqualizerValues array must be equal to the number of bands. If not, all values will be set to zero.</remarks>
+        /// <remarks>均衡器值数组中的元素数必须等于带区数;否则,所有值都将设置为零.</remarks>
         public float[] EqualizerValues
         {
             // IMPORTANT: To maintain parity between setting a property in XAML and procedural code, do not touch the getter and setter inside this dependency property!
@@ -131,7 +131,7 @@ namespace WPFSoundVisualizationLib
         }
 
         /// <summary>
-        /// Gets or sets the number of bands that the equalizer will display.
+        /// 获取或设置均衡器将显示的带区数.
         /// </summary>
         public int NumberOfBands
         {
@@ -151,7 +151,7 @@ namespace WPFSoundVisualizationLib
 
         #region Constructors
         /// <summary>
-        /// Creates an instance of Equalizer.
+        /// 创建均衡器的实例.
         /// </summary>
         public Equalizer()
         {
@@ -182,7 +182,7 @@ namespace WPFSoundVisualizationLib
         }
 
         /// <summary>
-        /// Called whenever the control's template changes. 
+        /// 每当控件的模板更改时调用. 
         /// </summary>
         /// <param name="oldTemplate">The old template</param>
         /// <param name="newTemplate">The new template</param>

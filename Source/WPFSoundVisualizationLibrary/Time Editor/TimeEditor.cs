@@ -30,11 +30,10 @@ using System.Windows.Media;
 namespace WPFSoundVisualizationLib
 {
     /// <summary>
-    /// A control that allows the user to
-    /// see and edit TimeSpans.
+    /// 允许用户查看和编辑时间跨度的控件
     /// </summary>
     [DisplayName("Time Editor")]
-    [Description("Displays and edits time spans.")]
+    [Description("显示和编辑时间跨度.")]
     [ToolboxItem(true)]    
     [TemplatePart(Name = "PART_HoursTextBox", Type = typeof(TextBox)),
     TemplatePart(Name = "PART_MinutesTextBox", Type = typeof(TextBox)),

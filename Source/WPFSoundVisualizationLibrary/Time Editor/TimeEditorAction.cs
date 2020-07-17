@@ -22,7 +22,7 @@
 namespace WPFSoundVisualizationLib
 {
     /// <summary>
-    /// An action performed on a TimeEditor.
+    /// 在时间编辑器上执行的操作.
     /// </summary>
     public enum TimeEditorAction
     {

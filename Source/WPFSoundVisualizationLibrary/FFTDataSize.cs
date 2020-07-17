@@ -2,9 +2,8 @@
 namespace WPFSoundVisualizationLib
 {
     /// <summary>
-    /// The various FFT dataset sizes that can be used for processing. Note that
-    /// when a control requires an array of real intensity results, the array will
-    /// be half the size specified here.
+    /// 可用于处理的各种FFT数据集大小. 
+    /// 请注意,当控件需要一组真实强度结果时,数组大小将是此处指定大小的一半.
     /// </summary>
     public enum FFTDataSize
     {

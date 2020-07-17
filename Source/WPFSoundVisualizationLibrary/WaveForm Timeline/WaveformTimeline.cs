@@ -30,8 +30,7 @@ using System.Windows.Shapes;
 namespace WPFSoundVisualizationLib
 {
     /// <summary>
-    /// A control that displays a stereo waveform and
-    /// allows a user to change playback position.
+    /// 显示立体声波形并允许用户更改播放位置的控件.
     /// </summary>
     [DisplayName("Waveform Timeline")]
     [Description("Displays a stereo waveform and allows a user to change playback position.")]

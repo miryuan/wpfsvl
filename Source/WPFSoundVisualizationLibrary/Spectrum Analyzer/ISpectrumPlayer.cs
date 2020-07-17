@@ -21,8 +21,7 @@
 namespace WPFSoundVisualizationLib
 {
     /// <summary>
-    /// Provides access to sound player functionality needed to
-    /// render a spectrum analyzer.
+    /// 提供对渲染频谱分析仪所需的声音播放器功能的访问.
     /// </summary>
     public interface ISpectrumPlayer : ISoundPlayer
     {

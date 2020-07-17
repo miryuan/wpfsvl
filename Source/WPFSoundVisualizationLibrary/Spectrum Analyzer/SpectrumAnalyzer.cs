@@ -31,7 +31,7 @@ using System.Windows.Threading;
 namespace WPFSoundVisualizationLib
 {
     /// <summary>
-    /// A spectrum analyzer control for visualizing audio level and frequency data.
+    /// 用于可视化音频电平和频率数据的频谱分析仪控件.
     /// </summary>
     [DisplayName("Spectrum Analyzer")]
     [Description("Displays audio level and frequency data.")]

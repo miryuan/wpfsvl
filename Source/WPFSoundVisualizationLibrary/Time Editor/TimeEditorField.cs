@@ -22,7 +22,7 @@
 namespace WPFSoundVisualizationLib
 {
     /// <summary>
-    /// Fields of a TimeEditor
+    /// 时间编辑器的字段
     /// </summary>
     public enum TimeEditorField
     {

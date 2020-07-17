@@ -23,8 +23,7 @@ using System;
 namespace WPFSoundVisualizationLib
 {
     /// <summary>
-    /// Provides access to sound player functionality needed to
-    /// generate a Waveform.
+    /// 提供生成波形所需的声音播放器功能.
     /// </summary>
     public interface IWaveformPlayer : ISoundPlayer
     {

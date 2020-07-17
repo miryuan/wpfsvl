@@ -23,7 +23,7 @@ using System.Windows;
 namespace WPFSoundVisualizationLib
 {
     /// <summary>
-    /// Provides data for the time editor change events. 
+    /// 为时间编辑器更改事件提供数据. 
     /// </summary>
     public sealed class TimeEditorEventArgs : RoutedEventArgs
     {

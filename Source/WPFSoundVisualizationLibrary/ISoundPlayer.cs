@@ -23,15 +23,14 @@ using System.ComponentModel;
 namespace WPFSoundVisualizationLib
 {
     /// <summary>
-    /// Provides access to functionality that is common
-    /// across all sound players.
+    /// 提供对所有声音播放器通用功能的访问.
     /// </summary>
     /// <seealso cref="IWaveformPlayer"/>
     /// <seealso cref="ISpectrumPlayer"/>
     public interface ISoundPlayer : INotifyPropertyChanged
     {
         /// <summary>
-        /// Gets whether the sound player is currently playing audio.
+        /// 获取声音播放器当前是否正在播放音频.
         /// </summary>
         bool IsPlaying { get; }
     }

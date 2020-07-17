@@ -32,8 +32,7 @@ using System.Windows.Media.Imaging;
 namespace WPFSoundVisualizationLib
 {
     /// <summary>
-    /// Displays album cover artwork
-    /// with a CD Jewel Case overlay.
+    /// 显示相册封面插图有一个光盘盒覆盖
     /// </summary>
     [DisplayName("Album Art Display")]
     [Description("Displays album cover artwork with a CD Jewel Case overlay.")]
@@ -84,7 +83,7 @@ namespace WPFSoundVisualizationLib
         }
 
         /// <summary>
-        /// Called after the <see cref="AlbumArtImage"/> value has changed.
+        /// 在<see cref="AlbumArtImage"/>值发生改变时调用.
         /// </summary>
         /// <param name="oldValue">The previous value of <see cref="AlbumArtImage"/></param>
         /// <param name="newValue">The new value of <see cref="AlbumArtImage"/></param>
@@ -94,13 +93,13 @@ namespace WPFSoundVisualizationLib
         }
 
         /// <summary>
-        /// Gets or sets the image to display in the CD jewel case as the album art cover. If this value
-        /// is set to null, the CD sleeve will appear empty and show an unlabeled disc instead.
+        /// 获取或设置要作为唱片集封面在光盘盒中显示的图像. 
+        /// 如果此值设置为空，则CD套将显示为空，并显示未标记的光盘.
         /// </summary>
         [Category("Common")]
         public ImageSource AlbumArtImage
         {
-            // IMPORTANT: To maintain parity between setting a property in XAML and procedural code, do not touch the getter and setter inside this dependency property!
+            // IMPORTANT: 要在XAML中设置属性和过程代码之间保持一致性，请不要在这个依赖属性中接触getter和setter！
             get
             {
                 return (ImageSource)GetValue(AlbumArtImageProperty);
@@ -115,8 +114,7 @@ namespace WPFSoundVisualizationLib
 
         #region Template Overrides
         /// <summary>
-        /// When overridden in a derived class, is invoked whenever application code
-        /// or internal processes call System.Windows.FrameworkElement.ApplyTemplate().
+        /// 在派生类中重写时，每当应用程序代码或内部进程调用 System.Windows.FrameworkElement.ApplyTemplate().
         /// </summary>
         public override void OnApplyTemplate()
         {
@@ -138,7 +136,7 @@ namespace WPFSoundVisualizationLib
         #region Drawing
         private void DrawAlbumArt()
         {
-            // Clear Canvas
+            //清理画布
             albumArtBuffer.Clear();
 
             using (DrawingContext drawingContext = drawingVisual.RenderOpen())
